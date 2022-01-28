@@ -2,8 +2,8 @@
 
 int main(int argc, char const *argv[])
 {
-    printf("hello, world\n");
-    printf("\community\by\n");
+
+    printf("%d\n",EOF);
     
     return 0;
 }
