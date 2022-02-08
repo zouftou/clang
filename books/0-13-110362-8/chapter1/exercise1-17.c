@@ -7,20 +7,18 @@
 
 main()
 {
-    int c, i, nc;
+    int c, i;
     char line[MAX_LINE];
-
-    nc = 0;
 
     i = 0;
     while ((c = getchar()) != EOF){
-        line[i] = c;
-        ++nc;
-        ++i;
-        if(c == '\n' && nc > MIN_CHAR) {
+        if( c != '\n'){
+            line[i] = c;
+            ++i;
+        } else{
             line[i] = '\0';
-            printf("%s", line);
-            nc = 0;
+            if(i >= MIN_CHAR)
+                printf("%s", line);
             i = 0;
         }
     }
