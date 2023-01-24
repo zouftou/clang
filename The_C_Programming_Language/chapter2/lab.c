@@ -3,5 +3,4 @@
 main()
 {
     printf("hello, world\n");
-    printf("\community\by\n");
 }
