@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <limits.h>
 
+/*	write a program to determine the ranges of char, short, int, long variables
+	both signed and unsigned */
+
 main()
 {
 	printf("From limits.h:\n");	

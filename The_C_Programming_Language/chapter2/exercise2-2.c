@@ -1,6 +1,9 @@
 #include<stdio.h>
 
+/* write a loop equivalent to the for loop above without using && or || */
+
 #define LIM 10
+
 main()
 {
     int i;
