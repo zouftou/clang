@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<string.h>
 
+/*  function htoi(s), which converts a string of hexadecimal digits (including 0x or 0X)
+    into its equivalent integer value. */
+
 int htoi(char s[]);
 
 int getdecimal(char h);
