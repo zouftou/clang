@@ -1,18 +1,28 @@
 #include<stdio.h>
+#include<string.h>
 
-int lower(int c);
+int getposition(char s[], char c);
 
 main()
 {
-    int c = 'F';
-    printf("%c", lower(c));
+    int i;
+    char s1[] = "abcdefefegdhy";
+    char s2[] = "fg";
+    int occur[2];
+
+    for (i = 0; i < strlen(s2); i++)
+        occur[i] = getposition(s1,s2[i]);
+
+    printf("%d\n", occur[0]);
+    printf("%d\n", occur[1]);
 }
 
-/* lower: convert c to lower case; ASCII only */
-int lower(int c)
+int getposition(char s[], char c)
 {
-    if(c >= 'A' && c <= 'Z')
-        return c + 'a' - 'A';
-    else
-        return c;
+    int i;
+
+    for (i = 0; i < strlen(s); i++)
+        if(s[i] == c)
+            return i;
+    return -1;
 }

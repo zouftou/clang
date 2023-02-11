@@ -8,7 +8,7 @@ int getdecimal(char h);
 main()
 {
     int a = htoi("0xDAD");
-    printf("%d", a);
+    printf("%d\n", a);
 }
 
 int htoi(char s[])
